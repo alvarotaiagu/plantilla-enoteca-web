@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 520" role="img" aria-label="Botella dibujada del vino Lonxe, inventado para esta demostración">
+<title>Lonxe</title>
+<path d="M80 150 L80 86 C80 76 84 70 88 66 L88 30 C88 24 92 20 100 20 C108 20 112 24 112 30 L112 66 C116 70 120 76 120 86 L120 150 C132 184 138 214 138 246 L138 486 C138 496 132 502 124 502 L76 502 C68 502 62 496 62 486 L62 246 C62 214 68 184 80 150 Z" fill="#1F3B46"/>
+<path d="M80 150 L80 86 C80 76 84 70 88 66 L88 30 C88 24 92 20 100 20 C108 20 112 24 112 30 L112 66 C116 70 120 76 120 86 L120 150 C132 184 138 214 138 246 L138 486 C138 496 132 502 124 502 L76 502 C68 502 62 496 62 486 L62 246 C62 214 68 184 80 150 Z" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="3"/>
+<path d="M84 24 h32 v46 h-32 z" fill="#B9C6C2"/>
+<path d="M84 62 h32 v10 h-32 z" fill="rgba(0,0,0,0.25)"/>
+<g>
+  <rect x="62" y="286" width="76" height="118" rx="3" fill="#EFEDE4"/>
+  <rect x="62" y="286" width="76" height="118" rx="3" fill="none" stroke="rgba(0,0,0,0.18)" stroke-width="1.5"/>
+  <line x1="70" y1="300" x2="130" y2="300" stroke="#1F3B46" stroke-width="1.6" opacity="0.5"/>
+  <path d="M70 320 C82 313, 90 327, 102 320 S122 313, 132 320" fill="none" stroke="#1F3B46" stroke-width="2.6"/><path d="M70 332 C82 325, 90 339, 102 332 S122 325, 132 332" fill="none" stroke="#1F3B46" stroke-width="2.6"/><path d="M70 344 C82 337, 90 351, 102 344 S122 337, 132 344" fill="none" stroke="#1F3B46" stroke-width="2.6"/>
+  <line x1="70" y1="366" x2="130" y2="366" stroke="#1F3B46" stroke-width="1.6" opacity="0.5"/>
+  <text x="100" y="384" fill="#1F3B46" font-family="Gabarito, Trebuchet MS, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Lonxe</text>
+  <text x="100" y="398" fill="#1F3B46" font-family="Overpass Mono, monospace" font-size="8" text-anchor="middle" opacity="0.7">VIÑO INVENTADO</text>
+</g>
+<rect x="62" y="418" width="76" height="20" rx="2" fill="#EFEDE4" opacity="0.9"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "Trasfega · enoteca (demostración)",
+  "short_name": "Trasfega",
+  "description": "Plantilla de demostración para enoteca. Negocio ficticio.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F0E6D6",
+  "theme_color": "#F0E6D6",
+  "lang": "es",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

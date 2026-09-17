@@ -1,0 +1,466 @@
+<!doctype html>
+<!--
+  ============================================================================
+  SITIO DE DEMOSTRACIÓN. «Trasfega, enoteca» es un negocio FICTICIO, inventado
+  para esta plantilla. Nombre, dirección, teléfono, horarios, precios, catas y
+  personas son datos de muestra. Los ocho vinos, sus bodegas y sus añadas
+  también están inventados: no existen, y las botellas están dibujadas en SVG
+  con «viño inventado» impreso en la propia etiqueta.
+  Bebida alcohólica: la web dice que solo se vende a mayores de 18 años y no
+  anima a beber.
+  No indexar, no citar como fuente.
+  Concepto: «Cata a ciegas».
+  ============================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Trasfega · enoteca (demostración)</title>
+<meta name="description" content="Plantilla de demostración para enoteca. Trasfega es un negocio ficticio: ocho vinos inventados, catas de los jueves y caja mensual.">
+<meta name="theme-color" content="#F0E6D6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trasfega · enoteca (sitio de demostración)">
+<meta property="og:description" content="Negocio ficticio. Plantilla con concepto «Cata a ciegas»: la etiqueta aparece después de lo que hay dentro.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;800&family=Public+Sans:wght@400;500;600&family=Overpass+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LiquorStore",
+  "name": "Trasfega",
+  "description": "Enoteca con catas y caja mensual. Negocio ficticio usado como demostración.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rúa da Barrica, 4",
+    "postalCode": "15402",
+    "addressLocality": "Ferrol",
+    "addressRegion": "A Coruña",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34981000046",
+  "email": "hola@trasfega.example",
+  "priceRange": "€€",
+  "openingHours": ["Tu-Fr 11:00-14:00", "Tu-Fr 17:30-21:00", "Sa 11:00-15:00", "Sa 18:00-22:00"],
+  "disambiguatingDescription": "Negocio ficticio. Sitio de demostración."
+}
+</script>
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<div class="cursor" aria-hidden="true" data-cursor>
+  <span class="cursor__gota"></span>
+  <span class="cursor__texto"></span>
+</div>
+
+<header class="cabecera" data-cabecera>
+  <a class="marca" href="#inicio">
+    <svg class="marca__icono" viewBox="0 0 28 34" aria-hidden="true" focusable="false">
+      <path d="M8 3h12l-1 12a5 5 0 0 1-10 0z" fill="currentColor"/>
+      <path d="M14 20v9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M8 31h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>
+    <span class="marca__texto">Trasfega</span>
+  </a>
+
+  <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-boton>
+    <span class="hamburguesa__lineas" aria-hidden="true"><i></i><i></i></span>
+    <span>Menú</span>
+  </button>
+
+  <nav class="nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+    <ul>
+      <li><a href="#seleccion">La selección</a></li>
+      <li><a href="#catar">Cómo se cata</a></li>
+      <li><a href="#catas">Catas</a></li>
+      <li><a href="#caja">La caja</a></li>
+      <li><a href="#visita">Visítanos</a></li>
+    </ul>
+    <a class="boton boton--granate nav__cta" href="#catas">Apuntarse a una cata</a>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__texto">
+      <p class="kicker">Ferrol · enoteca y catas · desde 2016</p>
+      <h1 class="hero__titulo" data-char>Primero lo que hay dentro</h1>
+      <p class="hero__entrada">
+        Aquí las botellas están tapadas hasta que las pruebas. No porque seamos raros,
+        sino porque la etiqueta condiciona: cuando sabes lo que cuesta, ya no estás
+        catando el vino, estás catando el precio.
+      </p>
+      <div class="hero__acciones">
+        <a class="boton boton--granate" href="#catas" data-iman>Apuntarse a una cata</a>
+        <a class="boton boton--linea" href="#seleccion" data-iman>Ver la selección</a>
+      </div>
+      <p class="hero__aviso">Venta solo a mayores de 18 años. El consumo de alcohol tiene riesgos para la salud: esta web no anima a beber.</p>
+    </div>
+
+    <ul class="hero__botellas" data-hero-botellas>
+      <li class="botella" data-destapada="false">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-agra.svg" width="200" height="520" alt="Botella dibujada del vino inventado Agra do Vento.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <p class="botella__pista">Tinto · 2021</p>
+      </li>
+      <li class="botella" data-destapada="false">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-lonxe.svg" width="200" height="520" alt="Botella dibujada del vino inventado Lonxe.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <p class="botella__pista">Blanco · 2023</p>
+      </li>
+      <li class="botella" data-destapada="false">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-bretema.svg" width="200" height="520" alt="Botella dibujada del vino inventado Brétema.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <p class="botella__pista">Rosado · 2022</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ══════════ SELECCIÓN ══════════ -->
+  <section class="seleccion" id="seleccion" aria-labelledby="t-seleccion">
+    <div class="seccion__cabeza">
+      <p class="indice">01 — La selección</p>
+      <h2 id="t-seleccion" data-char>Ocho botellas y ninguna de compromiso</h2>
+      <p class="parrafo">
+        No tenemos trescientas referencias: tenemos ocho que podemos explicar de memoria.
+        Cada una se puede probar por copas los jueves de cata. Pasa por encima —o toca—
+        para levantar la funda.
+      </p>
+    </div>
+
+    <ul class="vinos" data-vinos>
+      <li class="vino" data-tipo="tinto">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-agra.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Agra do Vento.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Agra do Vento</h3>
+          <p class="vino__dato">Tinto · mencía · 2021 · Ribeira Sacra</p>
+          <p class="vino__nota">Ligero, de los que se beben fríos en verano sin pedir permiso a nadie.</p>
+          <p class="vino__precio">14,50 €</p>
+        </div>
+      </li>
+      <li class="vino" data-tipo="blanco">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-lonxe.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Lonxe.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Lonxe</h3>
+          <p class="vino__dato">Blanco · albariño · 2023 · Salnés</p>
+          <p class="vino__nota">Salino y tirante. Con berberechos no falla y con un queso curado tampoco.</p>
+          <p class="vino__precio">16,00 €</p>
+        </div>
+      </li>
+      <li class="vino" data-tipo="tinto">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-muino.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Muíño Vello.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Muíño Vello</h3>
+          <p class="vino__dato">Tinto · viñas viejas · 2019 · Ribeiro</p>
+          <p class="vino__nota">El más serio de la casa. Se abre una hora antes y cambia entero.</p>
+          <p class="vino__precio">24,00 €</p>
+        </div>
+      </li>
+      <li class="vino" data-tipo="rosado">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-bretema.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Brétema.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Brétema</h3>
+          <p class="vino__dato">Rosado · de una noche · 2022 · Valdeorras</p>
+          <p class="vino__nota">Rosado de verdad, no de color. Es el que más discusiones genera en las catas.</p>
+          <p class="vino__precio">13,00 €</p>
+        </div>
+      </li>
+      <li class="vino" data-tipo="tinto">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-cantil.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Cantil.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Cantil</h3>
+          <p class="vino__dato">Tinto · brancellao · 2020 · Rías Baixas</p>
+          <p class="vino__nota">Fino y con un punto herbáceo. Va bien con pescado, aunque suene raro.</p>
+          <p class="vino__precio">19,50 €</p>
+        </div>
+      </li>
+      <li class="vino" data-tipo="espumoso">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-sartego.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Sartego.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Sartego</h3>
+          <p class="vino__dato">Espumoso · método tradicional · 30 meses</p>
+          <p class="vino__nota">Burbuja fina y poco azúcar. El que más se lleva la gente cuando hay que celebrar algo.</p>
+          <p class="vino__precio">22,00 €</p>
+        </div>
+      </li>
+      <li class="vino" data-tipo="blanco">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-raiola.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Raiola.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Raiola</h3>
+          <p class="vino__dato">Blanco · treixadura · 2022 · Ribeiro</p>
+          <p class="vino__nota">Con seis meses en depósito. Más ancho que el albariño y menos ruidoso.</p>
+          <p class="vino__precio">15,00 €</p>
+        </div>
+      </li>
+      <li class="vino" data-tipo="tinto">
+        <div class="botella__caja">
+          <img src="assets/botellas/botella-ferreiro.svg" width="200" height="520" loading="lazy" alt="Botella dibujada del vino inventado Ferreiro.">
+          <span class="botella__funda" aria-hidden="true"></span>
+        </div>
+        <div class="vino__ficha">
+          <h3>Ferreiro</h3>
+          <p class="vino__dato">Tinto · sousón · 2018 · Monterrei</p>
+          <p class="vino__nota">Oscuro y con acidez de las que despiertan. Para carne o para aguantar una conversación larga.</p>
+          <p class="vino__precio">27,00 €</p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="aviso">
+      Los ocho vinos, sus bodegas y sus añadas están inventados para esta demostración:
+      no existen. Las botellas están dibujadas en SVG y llevan «viño inventado» impreso
+      en la propia etiqueta, para que no haya duda ni en una captura de pantalla.
+    </p>
+  </section>
+
+  <!-- ══════════ CÓMO SE CATA ══════════ -->
+  <section class="catar" id="catar" aria-labelledby="t-catar">
+    <div class="seccion__cabeza">
+      <p class="indice">02 — Cómo se cata</p>
+      <h2 id="t-catar" data-char>Cuatro pasos y ningún misterio</h2>
+    </div>
+
+    <ol class="pasos">
+      <li>
+        <p class="pasos__num">01</p>
+        <h3>Vista</h3>
+        <p>Se inclina la copa sobre algo blanco y se mira el borde. Ahí se ve la edad:
+        los tintos jóvenes tiran a morado y los viejos, a teja.</p>
+      </li>
+      <li>
+        <p class="pasos__num">02</p>
+        <h3>Nariz</h3>
+        <p>Primero quieto y después moviendo la copa. No hace falta acertar la fruta: con
+        saber si huele a fruta, a madera o a establo, ya vas servido.</p>
+      </li>
+      <li>
+        <p class="pasos__num">03</p>
+        <h3>Boca</h3>
+        <p>Un sorbo corto. Se busca si raspa, si pesa, si seca la lengua y cuánto dura
+        después de tragar. Eso último es lo que separa a un vino bueno de uno correcto.</p>
+      </li>
+      <li>
+        <p class="pasos__num">04</p>
+        <h3>La etiqueta</h3>
+        <p>Y solo entonces se levanta la funda. A veces el vino de nueve euros gana al de
+        veinticinco, y esa es exactamente la gracia.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ══════════ CATAS ══════════ -->
+  <section class="catas" id="catas" aria-labelledby="t-catas">
+    <div class="seccion__cabeza">
+      <p class="indice">03 — Catas</p>
+      <h2 id="t-catas" data-char>Los jueves, a las ocho</h2>
+      <p class="parrafo">
+        Doce plazas, seis vinos tapados y dos horas. Se sale sabiendo un poco más y
+        habiendo cenado algo, porque se acompaña con conservas y queso.
+      </p>
+    </div>
+
+    <p class="cuenta" data-vivo>
+      <span class="cuenta__numero" data-dias>—</span>
+      <span class="cuenta__texto" data-proxima>Calculando la próxima cata…</span>
+    </p>
+
+    <ol class="sesiones" data-sesiones>
+      <li><span class="sesiones__fecha">—</span><span class="sesiones__tema">Cargando el calendario…</span></li>
+    </ol>
+
+    <aside class="catas__nota">
+      <h3>Lo que hay que saber</h3>
+      <ul>
+        <li>22 € por persona. Se paga al apuntarse, en la tienda o por teléfono.</li>
+        <li>Solo mayores de 18 años, sin excepción y sin discusión.</li>
+        <li>Si te apuntas y no puedes venir, avisa: hay lista de espera de verdad.</li>
+        <li>Hay agua, pan y escupidera. Catar no es beberse seis copas.</li>
+        <li>Si vienes en coche, cata sin tragar o pídele a alguien que conduzca.</li>
+      </ul>
+      <p class="catas__aviso">Calendario calculado en vivo para la demostración: son los jueves reales que vienen, con temas inventados.</p>
+    </aside>
+  </section>
+
+  <!-- ══════════ LA CAJA ══════════ -->
+  <section class="caja" id="caja" aria-labelledby="t-caja">
+    <div class="seccion__cabeza">
+      <p class="indice">04 — La caja</p>
+      <h2 id="t-caja" data-char>Tres botellas al mes, elegidas a mano</h2>
+      <p class="parrafo">
+        Sin permanencia y sin algoritmo: las elegimos nosotros después de probarlas, y si
+        un mes no nos convence nada, te lo decimos y no mandamos caja.
+      </p>
+    </div>
+
+    <ul class="planes">
+      <li class="plan">
+        <h3>Caja corta</h3>
+        <p class="plan__precio">39 €<span>/mes</span></p>
+        <ul>
+          <li>Tres botellas de entre 12 y 16 €</li>
+          <li>Ficha de cada vino, escrita a mano</li>
+          <li>Recogida en tienda</li>
+        </ul>
+      </li>
+      <li class="plan plan--destacado">
+        <h3>Caja larga</h3>
+        <p class="plan__precio">62 €<span>/mes</span></p>
+        <ul>
+          <li>Tres botellas de entre 18 y 28 €</li>
+          <li>Una de ellas siempre fuera de lo habitual</li>
+          <li>Recogida en tienda o envío a Ferrol y alrededores</li>
+          <li>Una cata de los jueves incluida cada trimestre</li>
+        </ul>
+      </li>
+      <li class="plan">
+        <h3>Caja a ciegas</h3>
+        <p class="plan__precio">45 €<span>/mes</span></p>
+        <ul>
+          <li>Tres botellas con la funda puesta</li>
+          <li>Las fichas van en un sobre cerrado</li>
+          <li>Se abre el sobre cuando ya has decidido cuál te gusta</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="aviso">Precios inventados para esta demostración. Venta solo a mayores de 18 años.</p>
+  </section>
+
+  <!-- ══════════ VISITA ══════════ -->
+  <section class="visita" id="visita" aria-labelledby="t-visita">
+    <div class="seccion__cabeza">
+      <p class="indice">05 — Visítanos</p>
+      <h2 id="t-visita" data-char>Rúa da Barrica, 4</h2>
+    </div>
+
+    <div class="visita__rejilla">
+      <form class="formulario" data-cata novalidate>
+        <h3>Apuntarse a una cata</h3>
+        <p class="formulario__texto">Doce plazas por jueves. Te confirmamos por teléfono y se paga al apuntarse.</p>
+        <p class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        </p>
+        <p class="campo">
+          <label for="tel">Teléfono</label>
+          <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+        </p>
+        <p class="campo">
+          <label for="personas">Cuántas personas</label>
+          <select id="personas" name="personas">
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+          </select>
+        </p>
+        <p class="campo campo--linea">
+          <input id="mayor" name="mayor" type="checkbox">
+          <label for="mayor">Confirmo que tengo 18 años o más</label>
+        </p>
+        <button class="boton boton--granate" type="submit" data-iman>Pedir plaza</button>
+        <p class="formulario__estado" data-cata-estado role="status"></p>
+        <p class="formulario__demo">Formulario de muestra: no envía nada a ningún sitio ni guarda lo que escribas.</p>
+      </form>
+
+      <div class="donde">
+        <p class="donde__estado" data-estado>Comprobando el horario…</p>
+        <address>
+          Rúa da Barrica, 4 · bajo<br>
+          15402 Ferrol<br>
+          <a href="tel:+34981000046">981 00 00 46</a><br>
+          <a href="mailto:hola@trasfega.example">hola@trasfega.example</a>
+        </address>
+        <dl class="horario" data-horario>
+          <div data-dias="2,3,4,5"><dt>Martes a viernes</dt><dd>11:00–14:00 · 17:30–21:00</dd></div>
+          <div data-dias="6"><dt>Sábado</dt><dd>11:00–15:00 · 18:00–22:00</dd></div>
+          <div data-dias="0,1"><dt>Domingo y lunes</dt><dd>Cerrado</dd></div>
+        </dl>
+        <p class="donde__nota">
+          Entrada a pie de calle, con la mesa de cata al fondo. Los jueves de cata la
+          tienda cierra a las 20:00 y se abre solo para quien esté apuntado.
+        </p>
+        <div class="mapa" data-mapa>
+          <button class="boton boton--linea" type="button" data-mapa-boton>Cargar el mapa de Google</button>
+          <p class="mapa__aviso">El mapa se carga solo si lo pides: hasta entonces esta web no llama a ningún servidor de terceros.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="pie__marca">
+    <svg class="marca__icono" viewBox="0 0 28 34" aria-hidden="true" focusable="false">
+      <path d="M8 3h12l-1 12a5 5 0 0 1-10 0z" fill="currentColor"/>
+      <path d="M14 20v9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M8 31h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>
+    <p>Trasfega · enoteca<br>Rúa da Barrica, 4 · Ferrol</p>
+  </div>
+  <nav class="pie__nav" aria-label="Enlaces del pie">
+    <ul>
+      <li><a href="#seleccion">La selección</a></li>
+      <li><a href="#catas">Catas</a></li>
+      <li><a href="#caja">La caja</a></li>
+      <li><a href="legal.html">Aviso legal y privacidad</a></li>
+    </ul>
+  </nav>
+  <p class="pie__sello">
+    <strong>Sitio de demostración.</strong> Trasfega es un negocio ficticio; los datos,
+    precios, catas y personas son de muestra. Los ocho vinos, sus bodegas y sus añadas
+    están inventados y las botellas están dibujadas para esta plantilla. Venta solo a
+    mayores de 18 años: el consumo de alcohol tiene riesgos para la salud y esta web no
+    anima a beber.
+  </p>
+</footer>
+
+<div class="cookie-banner" data-cookies hidden>
+  <p>Esta web usa una única cookie técnica para recordar que has visto este aviso. No hay analítica, ni seguimiento, ni cookies de terceros: el mapa de Google solo se carga si pulsas el botón.</p>
+  <div class="cookie-banner__acciones">
+    <button class="boton boton--granate" type="button" data-cookies-ok>Entendido</button>
+    <a class="boton boton--linea" href="legal.html#cookies">Leer más</a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

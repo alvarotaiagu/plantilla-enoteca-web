@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 520" role="img" aria-label="Botella dibujada del vino Muíño Vello, inventado para esta demostración">
+<title>Muíño Vello</title>
+<path d="M76 150 C70 120 74 96 82 72 L82 32 C82 25 86 21 100 21 C114 21 118 25 118 32 L118 72 C126 96 130 120 124 150 C140 172 150 196 150 226 L150 486 C150 496 144 502 134 502 L66 502 C56 502 50 496 50 486 L50 226 C50 196 60 172 76 150 Z" fill="#3B2A1E"/>
+<path d="M76 150 C70 120 74 96 82 72 L82 32 C82 25 86 21 100 21 C114 21 118 25 118 32 L118 72 C126 96 130 120 124 150 C140 172 150 196 150 226 L150 486 C150 496 144 502 134 502 L66 502 C56 502 50 496 50 486 L50 226 C50 196 60 172 76 150 Z" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="3"/>
+<path d="M84 24 h32 v46 h-32 z" fill="#C9A227"/>
+<path d="M84 62 h32 v10 h-32 z" fill="rgba(0,0,0,0.25)"/>
+<g>
+  <rect x="62" y="286" width="76" height="118" rx="3" fill="#2B2016"/>
+  <rect x="62" y="286" width="76" height="118" rx="3" fill="none" stroke="rgba(0,0,0,0.18)" stroke-width="1.5"/>
+  <line x1="70" y1="300" x2="130" y2="300" stroke="#E8DCC4" stroke-width="1.6" opacity="0.5"/>
+  <circle cx="100" cy="330" r="22" fill="none" stroke="#E8DCC4" stroke-width="3"/><circle cx="100" cy="330" r="7" fill="#E8DCC4"/>
+  <line x1="70" y1="366" x2="130" y2="366" stroke="#E8DCC4" stroke-width="1.6" opacity="0.5"/>
+  <text x="100" y="384" fill="#E8DCC4" font-family="Gabarito, Trebuchet MS, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Muíño Vello</text>
+  <text x="100" y="398" fill="#E8DCC4" font-family="Overpass Mono, monospace" font-size="8" text-anchor="middle" opacity="0.7">VIÑO INVENTADO</text>
+</g>
+<rect x="62" y="418" width="76" height="20" rx="2" fill="#2B2016" opacity="0.9"/>
+</svg>

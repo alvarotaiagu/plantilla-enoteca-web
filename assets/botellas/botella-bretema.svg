@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 520" role="img" aria-label="Botella dibujada del vino Brétema, inventado para esta demostración">
+<title>Brétema</title>
+<path d="M76 150 C70 120 74 96 82 72 L82 32 C82 25 86 21 100 21 C114 21 118 25 118 32 L118 72 C126 96 130 120 124 150 C140 172 150 196 150 226 L150 486 C150 496 144 502 134 502 L66 502 C56 502 50 496 50 486 L50 226 C50 196 60 172 76 150 Z" fill="#2E2433"/>
+<path d="M76 150 C70 120 74 96 82 72 L82 32 C82 25 86 21 100 21 C114 21 118 25 118 32 L118 72 C126 96 130 120 124 150 C140 172 150 196 150 226 L150 486 C150 496 144 502 134 502 L66 502 C56 502 50 496 50 486 L50 226 C50 196 60 172 76 150 Z" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="3"/>
+<path d="M84 24 h32 v46 h-32 z" fill="#D4A6B8"/>
+<path d="M84 62 h32 v10 h-32 z" fill="rgba(0,0,0,0.25)"/>
+<g>
+  <rect x="62" y="286" width="76" height="118" rx="3" fill="#F3E9EE"/>
+  <rect x="62" y="286" width="76" height="118" rx="3" fill="none" stroke="rgba(0,0,0,0.18)" stroke-width="1.5"/>
+  <line x1="70" y1="300" x2="130" y2="300" stroke="#5A2440" stroke-width="1.6" opacity="0.5"/>
+  <circle cx="72" cy="312" r="3" fill="#5A2440" opacity="0.85"/><circle cx="83" cy="312" r="3" fill="#5A2440" opacity="0.85"/><circle cx="94" cy="312" r="3" fill="#5A2440" opacity="0.85"/><circle cx="105" cy="312" r="3" fill="#5A2440" opacity="0.85"/><circle cx="116" cy="312" r="3" fill="#5A2440" opacity="0.85"/><circle cx="127" cy="312" r="3" fill="#5A2440" opacity="0.85"/><circle cx="72" cy="325" r="3" fill="#5A2440" opacity="0.85"/><circle cx="83" cy="325" r="3" fill="#5A2440" opacity="0.85"/><circle cx="94" cy="325" r="3" fill="#5A2440" opacity="0.85"/><circle cx="105" cy="325" r="3" fill="#5A2440" opacity="0.85"/><circle cx="116" cy="325" r="3" fill="#5A2440" opacity="0.85"/><circle cx="127" cy="325" r="3" fill="#5A2440" opacity="0.85"/><circle cx="72" cy="338" r="3" fill="#5A2440" opacity="0.85"/><circle cx="83" cy="338" r="3" fill="#5A2440" opacity="0.85"/><circle cx="94" cy="338" r="3" fill="#5A2440" opacity="0.85"/><circle cx="105" cy="338" r="3" fill="#5A2440" opacity="0.85"/>
+  <line x1="70" y1="366" x2="130" y2="366" stroke="#5A2440" stroke-width="1.6" opacity="0.5"/>
+  <text x="100" y="384" fill="#5A2440" font-family="Gabarito, Trebuchet MS, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Brétema</text>
+  <text x="100" y="398" fill="#5A2440" font-family="Overpass Mono, monospace" font-size="8" text-anchor="middle" opacity="0.7">VIÑO INVENTADO</text>
+</g>
+<rect x="62" y="418" width="76" height="20" rx="2" fill="#F3E9EE" opacity="0.9"/>
+</svg>

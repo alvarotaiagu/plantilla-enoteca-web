@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- SITIO DE DEMOSTRACIÓN. Trasfega es una enoteca ficticia. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Esta botella no está · Trasfega</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;800&family=Public+Sans:wght@400;500;600&family=Overpass+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+<style>
+  .perdida { min-height: 100svh; display: grid; align-content: center; gap: 1rem;
+             padding: clamp(3rem, 10vh, 7rem) var(--marco); max-width: 58ch; }
+  .perdida h1 { font-size: clamp(2rem, 1.2rem + 3.6vw, 4rem); }
+  .perdida .botella__caja { width: min(9rem, 40vw); }
+</style>
+</head>
+<body>
+<main class="perdida">
+  <p class="indice">Error 404</p>
+  <div class="botella">
+    <div class="botella__caja">
+      <img src="assets/botellas/botella-sartego.svg" width="200" height="520" alt="Botella dibujada del vino inventado Sartego.">
+      <span class="botella__funda" aria-hidden="true"></span>
+    </div>
+  </div>
+  <h1>Esta botella no está</h1>
+  <p>El enlace lleva a una página que no existe. Vuelve a la selección: son ocho, no hay
+  manera de perderse.</p>
+  <p><a class="boton boton--granate" href="index.html">Volver a la enoteca</a></p>
+  <p class="pie__sello" style="border:0;padding:0">
+    <strong>Sitio de demostración.</strong> Trasfega es un negocio ficticio; los vinos,
+    las bodegas y los precios están inventados. Venta solo a mayores de 18 años.
+  </p>
+</main>
+</body>
+</html>

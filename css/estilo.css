@@ -127,8 +127,9 @@ section[id] { scroll-margin-top: clamp(4.5rem, 10vh, 6rem); }
 .botella__caja { position: relative; }
 .botella__caja img { width: 100%; }
 .botella__funda {
-  position: absolute; left: 0; right: 0; bottom: 0;
-  height: 64%;                      /* tapa etiqueta y cuerpo, deja el cuello */
+  /* Ajustada al cuerpo de la botella, no a la caja: en el viewBox el vidrio va
+     de x=54 a x=146 (de 200) y el cuerpo empieza hacia y=190 (de 520). */
+  position: absolute; left: 25%; right: 25%; bottom: 3%; top: 34%;
   background:
     repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0 6px, transparent 6px 12px),
     linear-gradient(180deg, var(--granate) 0%, var(--granate-claro) 100%);

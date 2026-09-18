@@ -54,9 +54,29 @@
   "disambiguatingDescription": "Negocio ficticio. Sitio de demostración."
 }
 </script>
+<!-- Sin JavaScript no hay quien levante la cortina: mejor no enseñarla. -->
+<noscript><style>.cortina { display: none !important; }</style></noscript>
 </head>
 <body>
 <a class="salto" href="#contenido">Saltar al contenido</a>
+<!-- Cortina «cata a ciegas»: la funda se llena de vino y se levanta. -->
+<div class="cortina cortina--enoteca" data-cortina aria-hidden="true">
+  <div class="cortina__centro">
+    <svg class="cortina__botella" viewBox="0 0 120 200" aria-hidden="true">
+      <clipPath id="cortina-vidrio">
+        <path d="M50 12h20v52c0 12 18 20 18 44v76c0 6-4 10-10 10H42c-6 0-10-4-10-10V108c0-24 18-32 18-44z"/>
+      </clipPath>
+      <g clip-path="url(#cortina-vidrio)">
+        <rect class="cortina__vino" x="0" y="0" width="120" height="200"/>
+      </g>
+      <path class="cortina__vidrio" d="M50 12h20v52c0 12 18 20 18 44v76c0 6-4 10-10 10H42c-6 0-10-4-10-10V108c0-24 18-32 18-44z"/>
+      <rect class="cortina__etiqueta" x="36" y="126" width="48" height="36" rx="3"/>
+    </svg>
+    <p class="cortina__marca">Trasfega</p>
+    <p class="cortina__pie">a ciegas</p>
+  </div>
+</div>
+
 
 <div class="cursor" aria-hidden="true" data-cursor>
   <span class="cursor__gota"></span>

@@ -415,3 +415,43 @@ section[id] { scroll-margin-top: clamp(4.5rem, 10vh, 6rem); }
   /* la funda sigue levantándose, pero sin recorrido */
   .botella__funda { transition: opacity 0.001ms; }
 }
+
+/* ── Cortina de entrada ────────────────────────────────────────────────
+   Obligatoria (§5 del pliego). El `display` va en `:not([hidden])`, nunca
+   en la clase a secas: si no, ganaría al atributo y la página quedaría
+   tapada para siempre —el mismo fallo que el aviso de cookies.
+   ────────────────────────────────────────────────────────────────────── */
+.cortina { position: fixed; inset: 0; z-index: 400; }
+.cortina:not([hidden]) { display: grid; place-items: center; }
+.cortina[hidden] { display: none !important; }
+.cortina__centro {
+  position: relative; z-index: 3;
+  display: grid; justify-items: center; gap: 0.9rem;
+  padding: 0 1.5rem; text-align: center;
+}
+.cortina__marca {
+  margin: 0; font-family: var(--display);
+  font-size: clamp(2.1rem, 8vw, 4.6rem); line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+.cortina__pie {
+  margin: 0; font-family: var(--mono);
+  font-size: clamp(0.6rem, 1.8vw, 0.72rem); letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+@media (prefers-reduced-motion: reduce) { .cortina { display: none !important; } }
+
+/* «Cata a ciegas»: la funda se llena y se levanta. El borde de abajo es el
+   hombro de la botella, y en reposo queda fuera de pantalla. */
+.cortina--enoteca {
+  inset: 0 0 -10vh 0;
+  background: var(--granate);
+  border-radius: 0 0 44% 44% / 0 0 10vh 10vh;
+}
+.cortina--enoteca .cortina__centro { align-content: center; padding-bottom: 10vh; }
+.cortina--enoteca .cortina__marca { color: var(--papel-claro); }
+.cortina--enoteca .cortina__pie { color: var(--oro); }
+.cortina__botella { width: min(26vw, 7.5rem); height: auto; }
+.cortina__vino { fill: var(--tinta); }
+.cortina__vidrio { fill: none; stroke: var(--papel-claro); stroke-width: 3; }
+.cortina__etiqueta { fill: none; stroke: var(--oro); stroke-width: 2.5; }
